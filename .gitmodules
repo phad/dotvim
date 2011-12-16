@@ -1,0 +1,3 @@
+[submodule "bundle/github-colorscheme"]
+	path = bundle/github-colorscheme
+	url = git://github.com/grillpanda/github-colorscheme.git
