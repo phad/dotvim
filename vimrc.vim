@@ -15,13 +15,11 @@ set shiftwidth=2                                      " Number of spaces for aut
 set autoindent smartindent                            " Indentation. Do it.
 set nowrap                                            " Don’t wrap
 
-set showcmd                                           " Show incomplete commands
-set showmode                                          " Show mode
-
 set ignorecase smartcase                              " Ignore case for searches without capital letters
 set hlsearch                                          " Highlight all matches
 set incsearch                                         " Incremental searching
 
+set hidden                                            " Switch buffers without saving
 set nobackup                                          " Do not backup
 set nowritebackup                                     " Also, do not backup
 set directory+=,~/tmp,$TMP                            " Single place for swap files
@@ -32,6 +30,8 @@ set colorcolumn=81                                    " Highlight wide column
 set list listchars=tab:»·,trail:·                     " Display tabs and trailing whitespace
 
 set laststatus=2                                      " Always show status bar
+set showcmd                                           " Show incomplete commands
+set showmode                                          " Show mode
 
 set splitbelow                                        " New splits below
 set splitright                                        "   and to the right
