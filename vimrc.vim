@@ -7,10 +7,6 @@ call pathogen#infect()                                " Enable pathogen to load 
 
 syntax enable                                         " Syntax highlighting
 colorscheme github                                    " Colors
-au BufRead,BufNewFile *.ru,Rakefile set syntax=ruby   " Treat as Ruby
-au BufRead,BufNewFile *.ejs         set syntax=html   " Treat as HTML
-
-filetype plugin indent on                             " Detect filetype
 
 set expandtab                                         " Spaces, not tabs
 set tabstop=2 softtabstop=2                           " Tab width
@@ -52,7 +48,7 @@ map <C-l> <C-w>l
 map <leader>o o<Esc>
 map <leader>O O<Esc>
 
-" Load any local settings
+" Load any local configuration
 if filereadable($HOME . '/.vim/vimrc.local.vim')
   so $HOME/.vim/vimrc.local.vim
 endif
