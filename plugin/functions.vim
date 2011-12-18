@@ -12,10 +12,10 @@ function! Preserve(command)
   call setpos('.', save_pos)
 endfunction
 
-function! <SID>StripTrailingWhitespace()
+function! StripTrailingWhitespace()
   call Preserve("%s/\\s\\+$//e")
 endfunction
 
 
-nmap _$ :call <SID>StripTrailingWhitespace()<CR>
+nmap _$ :call StripTrailingWhitespace()<CR>
 nmap _= :call Preserve("normal gg=G")<CR>

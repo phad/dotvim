@@ -7,5 +7,5 @@ if has("autocmd")
   au BufRead,BufNewFile *.ru  setfiletype ruby
   au BufRead,BufNewFile *.ejs setfiletype html
 
-  au BufWritePre *.css,*.erb,*.feature,*.html,*.js,*.rb :call <SID>StripTrailingWhitespace()
+  au BufWritePre *.css,*.erb,*.feature,*.html,*.js,*.rb :call StripTrailingWhitespace()
 end
