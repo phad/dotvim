@@ -6,7 +6,7 @@ namespace :dotvim do
   task :install => [:update, :symlink]
 
   desc 'Update .vim and get latest pristine bundles'
-  task :update  => ['update:repo', 'update:bundles:pristine']
+  task :update  => ['update:repo', 'update:bundles:pristine', 'update:bundles:build']
 
   task :symlink do
     symlink_config('vimrc')
@@ -30,7 +30,17 @@ namespace :dotvim do
           FileUtils.cd(bundle) do
             git_command('checkout master')
             git_command('pull')
+            git_command('submodule update --init --recursive')
           end
+        end
+      end
+
+      task :build do
+        command_t_ruby = File.expand_path('./bundle/Command-T/ruby/command-t')
+
+        FileUtils.cd(command_t_ruby) do
+          `ruby extconf.rb`
+          `make`
         end
       end
     end
