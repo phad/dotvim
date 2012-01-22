@@ -4,6 +4,7 @@ set encoding=utf-8
 let mapleader=","
 
 call pathogen#infect()                                " Enable pathogen to load plugin bundles from ~/.vim/bundle
+call pathogen#helptags()
 
 syntax enable                                         " Syntax highlighting
 colorscheme github                                    " Colors
@@ -15,10 +16,11 @@ set shiftwidth=2                                      " Number of spaces for aut
 set autoindent smartindent                            " Indentation. Do it.
 set nowrap                                            " Don’t wrap
 
-set ignorecase smartcase                              " Ignore case for searches without capital letters
-set hlsearch                                          " Highlight all matches
-set incsearch                                         " Incremental searching
+set ignorecase smartcase  " Ignore case for searches without capital letters
+set hlsearch              " Highlight all matches
+set incsearch             " Incremental searching
 
+set autoread                                          " Reload buffers modified outside Vim
 set hidden                                            " Switch buffers without saving
 set nobackup                                          " Do not backup
 set nowritebackup                                     " Also, do not backup
