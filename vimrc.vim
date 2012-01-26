@@ -50,6 +50,10 @@ map <C-l> <C-w>l
 map <leader>o o<Esc>
 map <leader>O O<Esc>
 
+" Ack for project search
+map <leader>f :Ack<space>
+noremap <Leader>F :Ack <cword><cr>
+
 " Load any local configuration
 if filereadable($HOME . '/.vim/vimrc.local.vim')
   so $HOME/.vim/vimrc.local.vim
