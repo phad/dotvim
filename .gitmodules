@@ -4,9 +4,9 @@
 [submodule "bundle/Command-T"]
 	path = bundle/Command-T
 	url = git://github.com/wincent/Command-T.git
-[submodule "bundle/Vim-Tomorrow-Theme"]
-	path = bundle/Vim-Tomorrow-Theme
-	url = git://github.com/ChrisKempson/Vim-Tomorrow-Theme.git
+[submodule "bundle/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
