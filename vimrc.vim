@@ -17,9 +17,18 @@ set autoindent smartindent                            " Indentation. Do it.
 set nowrap                                            " Don’t wrap
 set formatoptions=qrnl
 
-set ignorecase smartcase  " Ignore case for searches without capital letters
-set hlsearch              " Highlight all matches
-set incsearch             " Incremental searching
+set ignorecase smartcase                              " Ignore case for searches without capital letters
+set hlsearch                                          " Highlight all matches
+set incsearch                                         " Incremental searching
+set gdefault                                          " Replace all occurrences in a line by default
+" Clear search highlights
+nnoremap <leader><space> :noh<cr>
+" Saner regex in forward search
+nnoremap / /\v
+vnoremap / /\v
+" Jump between bracket pairs
+nnoremap <tab> %
+vnoremap <tab> %
 
 set autoread                                          " Reload buffers modified outside Vim
 set hidden                                            " Switch buffers without saving
