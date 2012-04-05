@@ -15,6 +15,7 @@ set shiftwidth=2                                      " Number of spaces for aut
 
 set autoindent smartindent                            " Indentation. Do it.
 set nowrap                                            " Don’t wrap
+set formatoptions=qrnl
 
 set ignorecase smartcase  " Ignore case for searches without capital letters
 set hlsearch              " Highlight all matches
