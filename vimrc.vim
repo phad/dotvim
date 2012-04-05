@@ -46,6 +46,9 @@ set laststatus=2                                      " Always show status bar
 set showcmd                                           " Show incomplete commands
 set showmode                                          " Show mode
 
+set wildmenu                                          " Better command completion
+set wildmode=list:longest
+
 set splitbelow                                        " New splits below
 set splitright                                        "   and to the right
 
