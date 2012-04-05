@@ -52,7 +52,8 @@ set wildmode=list:longest
 set splitbelow                                        " New splits below
 set splitright                                        "   and to the right
 
-set formatoptions-=o                                  " New lines don’t continue comments
+" Quicker escape
+inoremap jj <ESC>
 
 " Window navigation
 map <C-h> <C-w>h
