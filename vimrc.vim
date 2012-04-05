@@ -61,6 +61,19 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Open a new vertical split and go to it
+nnoremap <leader>w <C-w>v<C-w>l
+
+" Don't you use those arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
 " Blank lines without insert
 map <leader>o o<Esc>
 map <leader>O O<Esc>
