@@ -41,6 +41,7 @@ set ruler                                             " Show ruler
 set colorcolumn=81                                    " Highlight wide column
 set list listchars=tab:»·,trail:·                     " Display tabs and trailing whitespace
 
+set scrolloff=3                                       " 3 lines of context around cursor
 set laststatus=2                                      " Always show status bar
 set showcmd                                           " Show incomplete commands
 set showmode                                          " Show mode
