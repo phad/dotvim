@@ -7,7 +7,7 @@ call pathogen#infect()                                " Enable pathogen to load 
 call pathogen#helptags()
 
 syntax enable                                         " Syntax highlighting
-colorscheme github                                    " Colors
+colorscheme Tomorrow-Night                            " Colors
 
 set expandtab                                         " Spaces, not tabs
 set tabstop=2 softtabstop=2                           " Tab width
