@@ -36,7 +36,7 @@ set nobackup                                          " Do not backup
 set nowritebackup                                     " Also, do not backup
 set directory+=,~/tmp,$TMP                            " Single place for swap files
 
-set relativenumber numberwidth=5                      " Show relative line numbers, with padding
+set number numberwidth=5                              " Show line numbers, with padding
 set ruler                                             " Show ruler
 set colorcolumn=81                                    " Highlight wide column
 set list listchars=tab:»·,trail:·                     " Display tabs and trailing whitespace
