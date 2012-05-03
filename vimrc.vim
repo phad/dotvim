@@ -80,6 +80,7 @@ noremap <Leader>F :Ack <cword><cr>
 
 " ctrlp configuration
 let g:ctrlp_map = '<leader>p'
+map <leader>b :CtrlPBuffer<cr>
 
 " Load any local configuration
 if filereadable($HOME . '/.vim/vimrc.local.vim')
